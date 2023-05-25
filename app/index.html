@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title> Encrypto </title>
+    <!-- Favicon -->
+    <link rel="icon" href="">
+    <!-- Styles and Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Karla:ital,wght@0,200;0,400;0,500;0,700;1,400&family=Lato:wght@300&family=Metrophobic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <a href="#">
+            <img class="logo" src="./assets/img/logo.svg" alt="logo de encrypt">
+        </a>
+    </header>
+    <main>
+        <section class="input">
+            <textarea class="textarea" type="text" cols="38" rows="10" placeholder="Enter the text here ..."></textarea>
+            <div class="alert">
+                <img src="./assets/img/alert.svg" alt="logo de alert">
+                <h6>Only lowercase letters and no seats.</h6>
+            </div>
+            <div class="buttons">
+                <button class="btnEncrypt btn btn--blue" type="button">Encrypt</button>
+                <button class="btnDecrypt btn btn--gray" type="button">Decrypt</button>
+            </div>
+        </section>
+        <section class="output"> 
+            <textarea class="message" type="text" cols="20" rows="10"></textarea>
+            <div>
+                <!-- <a class="btn btn--gray btn--copy" href="#">Copy here!!</a> -->
+                <button class="btnCopy btn btn--gray btn--copy">Copy</button>
+            </div>
+        </section>
+    </main>
+    <!-- <footer>THIS IS A FOOTER</footer> -->
+
+    <script src="./app.js"></script>
+</body>
+</html>

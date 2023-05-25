@@ -1,0 +1,117 @@
+/* 
+1. Positioning
+2. Box Model
+3. Typography
+4. Visuals
+5. Other
+*/
+
+:root {
+    /* Colors */
+    --background-color: #E5E5E5;
+    --dark-blue-300: #0A3871;
+    --gray-400: #495057;
+    --gray-500: #343A40;
+    --gray-button: #D8DFE8;
+} 
+
+* {
+    background-color: var(--background-color);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+   
+}
+
+.logo {
+    padding-top: 30px;
+    margin-left: 50px;
+    width: 2%;
+}
+
+main {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 120px;
+}
+
+.textarea {
+    background-color: var(--background-color);
+    border: none;
+    color: var(--dark-blue-300);
+    margin-top: 50px;
+    text-transform: lowercase;
+}
+
+::placeholder { color: var(--dark-blue-300); }
+    .textarea:focus {
+        outline: none;
+    }
+
+.message {
+    background: #ffff;
+    /* background-image: url(./assets/img/muñeco.svg); */
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: var(--dark-blue-300);
+    margin: 0px 50px;
+    padding: 10px 10px;
+    height: 85%;
+    text-transform: lowercase;
+    position: fixed;
+}
+
+.message:focus {
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 18px;
+}
+
+.btn {
+    border: 1px solid var(--dark-blue-300);
+    border-radius: 24px;
+    cursor: pointer;
+    height: 60px;
+    width: 328px;
+    font-size: 16px;
+}
+
+.btn--blue {
+    background-color: var(--dark-blue-300);
+    color: #ffff;
+}
+
+.btn--gray {
+    background-color: var(--gray-button);
+    color: var(--dark-blue-300);
+    margin-left: 30px;
+}
+
+.btn--copy {
+    margin-left: 80px;
+    margin-top: 580px;
+    position: fixed;
+}
+
+.alert {
+    display: flex;
+}
+
+.alert h6 {
+    font-size: 12px;
+    line-height: 150%;
+    color: var(--gray-400);
+    margin-left: 5px;
+}
+
+
+
+
