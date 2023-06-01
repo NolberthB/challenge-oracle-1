@@ -27,10 +27,24 @@
    
 }
 
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 30px;
+    padding-bottom: 0px;
+    
+}
+
 .logo {
-    padding-top: 30px;
-    margin-left: 50px;
-    width: 2%;
+    width: min(30vw, 40px);
 }
 
 main {
@@ -111,7 +125,3 @@ main {
     color: var(--gray-400);
     margin-left: 5px;
 }
-
-
-
-
